@@ -1,13 +1,8 @@
+# Standalone-North-Yankton-v1.0.0
+# INFORMATION: This resource allows for players to travel roleplay friendly to and from North Yankton and San Andreas. This resource adds map blips to your game, adds a menu, and markers.
+
+# INSTALLATION: Simply put this in your server like you would with any other resource.
+
+# CONFIGURATION: There are no configuration options for this resource.
+
 # For support or any script ideas/requests, please join my Discord. https://discord.gg/SQXvn5a
-INFORMATION:
-This resource allows for players to "perfomance friendly" travel to and fro San Andreas and North Yankton. Legit.
-
-INSTALLATION:
-Simply download the resource, and the throw it in the server as you would like any other.
-
-CONFIGURATION:
-Whats cool is that there isn't any? Super simple easy drap drop copy pasteee.
-
-
-
-
