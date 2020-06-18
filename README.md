@@ -1,6 +1,4 @@
-README:
-For support or any script ideas/requests, please join my Discord. https://discord.gg/SQXvn5a
-
+# For support or any script ideas/requests, please join my Discord. https://discord.gg/SQXvn5a
 INFORMATION:
 This resource allows for players to "perfomance friendly" travel to and fro San Andreas and North Yankton. Legit.
 
