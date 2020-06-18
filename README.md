@@ -4,7 +4,7 @@ This resource allows for players to travel roleplay friendly to and from North Y
 Preview
 https://imgur.com/a/lrkeZzX
 # INSTALLATION: 
-Simply put this in your server like you would with any other resource.
+Simply put this in your server like you would with any other resource. Yep that easy.
 
 # CONFIGURATION: 
 There are no configuration options for this resource.
