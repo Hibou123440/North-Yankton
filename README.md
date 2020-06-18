@@ -6,7 +6,6 @@ https://imgur.com/a/lrkeZzX
 # INSTALLATION: 
 After downloading the resource just put it in your server as you would with any other resource.
 Download and add NativeUILua
-Enjoy! :slight_smile:
 
 # CONFIGURATION: 
 There are no configuration options for this resource.
