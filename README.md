@@ -4,7 +4,9 @@ This resource allows for players to travel roleplay friendly to and from North Y
 Preview
 https://imgur.com/a/lrkeZzX
 # INSTALLATION: 
-Simply put this in your server like you would with any other resource. Yep that easy.
+After downloading the resource just put it in your server as you would with any other resource.
+Download and add NativeUILua
+Enjoy! :slight_smile:
 
 # CONFIGURATION: 
 There are no configuration options for this resource.
