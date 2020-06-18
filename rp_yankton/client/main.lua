@@ -1,38 +1,5 @@
 local nyat = false
 local lsat = true
-_menuPool = NativeUI.CreatePool()
-mainMenu = NativeUI.CreateMenu("Airport", "Buy Plane Tickets!")
-_menuPool:Add(mainMenu)
-
-function AddMenuPlane(menu)
-	local Item = NativeUI.CreateItem("Fly to North Yankton!", "Take a trip!")
-    Item.Activated = function(ParentMenu, SelectedItem)
-		if nyat == false and lsat == true then
-			NYfly()
-			nyat = true
-			lsat = false
-		elseif nyat == true then
-			ShowNotification("You are already here goofball!")
-		end
-    end
-    menu:AddItem(Item)
-	local Item = NativeUI.CreateItem("Fly to San Andreas!", "Take a trip!")
-    Item.Activated = function(ParentMenu, SelectedItem)
-		if lsat == false and nyat == true then
-			LSfly()
-			nyat = false
-			lsat = true
-		elseif lsat == true then
-			ShowNotification("You are already here goofball!")
-		end
-    end
-    menu:AddItem(Item)
-end
-
-AddMenuPlane(mainMenu)
-_menuPool:MouseControlsEnabled(false)
-_menuPool:ControlDisablingEnabled(false)
-_menuPool:RefreshIndex()
 
 local coords = {
   {x=5343.38, y=-5200.4, z=83.26}, -- LSIA
