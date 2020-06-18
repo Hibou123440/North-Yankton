@@ -1,6 +1,3 @@
-local nyat = false
-local lsat = true
-
 DrawText3D = function(x, y, z, text)
 	local onScreen,_x,_y=World3dToScreen2d(x,y,z)
 	local px,py,pz=table.unpack(GetGameplayCamCoords())
@@ -21,6 +18,7 @@ DrawText3D = function(x, y, z, text)
 end
 
 function NYfly()
+	mainMenu:Visible(not mainMenu:Visible())
 	DoScreenFadeOut(1000) --first part
 	Wait(1000)
 	NYIpl()
@@ -50,6 +48,7 @@ function NYfly()
 end
 
 function LSfly()
+	mainMenu:Visible(not mainMenu:Visible())
 	DoScreenFadeOut(1000) --first part
 	Wait(1000)
 	unlNYipl()
@@ -158,4 +157,24 @@ function unlNYipl()
   RemoveIpl("prologue_DistantLights")
   RemoveIpl("prologue_LODLights")
   RemoveIpl("prologue_m2_door") 
+end
+
+function ShowNotification(text)
+    SetNotificationTextEntry("STRING")
+    AddTextComponentString(text)
+    DrawNotification(false, false)
+end
+
+function AddBlips()
+    for _, info in pairs(coords) do
+      info.blip = AddBlipForCoord(info.x, info.y, info.z)
+      SetBlipSprite(info.blip, 90)
+	  SetBlipAsShortRange(info.blip, true)
+      SetBlipDisplay(info.blip, 4)
+      SetBlipScale(info.blip, 1.0)
+      SetBlipColour(info.blip, 3)
+	  BeginTextCommandSetBlipName("STRING")
+      AddTextComponentString("Airport")
+      EndTextCommandSetBlipName(info.blip)
+    end
 end
