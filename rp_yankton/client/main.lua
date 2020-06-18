@@ -164,3 +164,17 @@ function ShowNotification(text)
     AddTextComponentString(text)
     DrawNotification(false, false)
 end
+
+function AddBlips()
+    for _, info in pairs(coords) do
+      info.blip = AddBlipForCoord(info.x, info.y, info.z)
+      SetBlipSprite(info.blip, 90)
+	  SetBlipAsShortRange(info.blip, true)
+      SetBlipDisplay(info.blip, 4)
+      SetBlipScale(info.blip, 1.0)
+      SetBlipColour(info.blip, 3)
+	  BeginTextCommandSetBlipName("STRING")
+      AddTextComponentString("Airport")
+      EndTextCommandSetBlipName(info.blip)
+    end
+end
